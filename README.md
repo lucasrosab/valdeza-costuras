@@ -1,2 +1,3 @@
-# valdeza-costuras
-Portal de divulgação de serviços de costuras online
+# Valdeza Costuras
+
+Página de Divulgação de Serviços da Valdeza Costuras.
