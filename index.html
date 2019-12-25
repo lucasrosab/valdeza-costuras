@@ -19,6 +19,7 @@
         
         <link rel="stylesheet" href="css/libs/reset.css">
         <link rel="stylesheet" href="css/libs/materialize.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/pagina-inicial.css">
         
     </head>
@@ -27,24 +28,36 @@
             <nav class="deep-orange lighten-3">
                 <div class="container">
                     <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo">Logo</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="costura.html">Costura</a></li>
-                        <li><a href="artesanato.html">Artesanato</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
+                        <a href="index.html" class="brand-logo">Logo</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li class="active"><a href="index.html">Início</a></li>
+                            <li><a href="sobre.html">Sobre</a></li>
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Costura</a></li>
+                            <li><a href="artesanato.html">Artesanato</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                        <!-- Dropdown Nav -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="servicos/masculino.html">Masculino</a></li>
+                            <li><a href="servicos/feminino.html">Feminino</a></li>
+                            <li><a href="servicos/casa.html">Casa</a></li>
+                        </ul>
                     </div>
                 </nav>            
                 <ul class="sidenav" id="mobile-demo">
-                    <li><a href="index.html">Início</a></li>
+                    <li class="active"><a href="index.html">Início</a></li>
                     <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="costura.html">Costura</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Costura<i class="fas fa-sort-down"></i></a></li>
                     <li><a href="artesanato.html">Artesanato</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                </ul>                    
+                </ul>     
+                <!-- Dropdown SideNav -->
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="servicos/masculino.html">Masculino</a></li>
+                    <li><a href="servicos/feminino.html">Feminino</a></li>
+                    <li><a href="servicos/casa.html">Casa</a></li>
+                </ul>
             </div>  
         </header>
 
@@ -81,7 +94,7 @@
                         Titulo
                     </div>
                     <div class="col s12 m6 l6">
-                        Imagem 1
+                        <i class="fab fa-500px"></i>
                     </div>
                     <div class="col s12 m6 l6">
                         textos
@@ -107,7 +120,13 @@
                                 <a class="grey-text text-lighten-3" href="sobre.html">Sobre</a>
                             </li>
                             <li>
-                                <a class="grey-text text-lighten-3" href="costura.html">Costura</a>
+                                <a class="grey-text text-lighten-3" href="servicos/masculino.html">Masculino</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="servicos/feminino.html">Feminino</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="servicos/casa.html">Casa</a>
                             </li>
                             <li>
                                 <a class="grey-text text-lighten-3" href="artesanato.html">Artesanato</a>

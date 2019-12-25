@@ -19,6 +19,7 @@
         
         <link rel="stylesheet" href="css/libs/reset.css">
         <link rel="stylesheet" href="css/libs/materialize.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/pagina-inicial.css">
         
     </head>
@@ -27,62 +28,80 @@
             <nav class="deep-orange lighten-3">
                 <div class="container">
                     <div class="nav-wrapper">
-                    <a href="index.html" class="brand-logo">Logo</a>
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index.html">Início</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="costura.html">Costura</a></li>
-                        <li><a href="artesanato.html">Artesanato</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
+                        <a href="index.html" class="brand-logo">Logo</a>
+                        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="index.html">Início</a></li>
+                            <li class="active"><a href="sobre.html">Sobre</a></li>
+                            <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Costura</a></li>
+                            <li><a href="artesanato.html">Artesanato</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                        <!-- Dropdown Nav -->
+                        <ul id="dropdown1" class="dropdown-content">
+                            <li><a href="servicos/masculino.html">Masculino</a></li>
+                            <li><a href="servicos/feminino.html">Feminino</a></li>
+                            <li><a href="servicos/casa.html">Casa</a></li>
+                        </ul>
                     </div>
                 </nav>            
                 <ul class="sidenav" id="mobile-demo">
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="costura.html">Costura</a></li>
+                    <li class="active"><a href="sobre.html">Sobre</a></li>
+                    <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Costura<i class="fas fa-sort-down"></i></a></li>
                     <li><a href="artesanato.html">Artesanato</a></li>
                     <li><a href="contato.html">Contato</a></li>
-                </ul>                    
+                </ul>     
+                <!-- Dropdown SideNav -->
+                <ul id="dropdown2" class="dropdown-content">
+                    <li><a href="servicos/masculino.html">Masculino</a></li>
+                    <li><a href="servicos/feminino.html">Feminino</a></li>
+                    <li><a href="servicos/casa.html">Casa</a></li>
+                </ul>
             </div>  
         </header>
-<footer class="page-footer black">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text"><strong>Valdeza Costura</strong></h5>
-                <p class="grey-text text-lighten-4">Transformando suas idéias em roupas exclusivas!</p>
+        <footer class="page-footer black">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text"><strong>Valdeza Costura</strong></h5>
+                        <p class="grey-text text-lighten-4">Transformando suas idéias em roupas exclusivas!</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Links</h5>
+                        <ul>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="index.html">Início</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="servicos/masculino.html">Masculino</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="servicos/feminino.html">Feminino</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="servicos/casa.html">Casa</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="artesanato.html">Artesanato</a>
+                            </li>
+                            <li>
+                                <a class="grey-text text-lighten-3" href="contato.html">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="index.html">Início</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="sobre.html">Sobre</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="costura.html">Costura</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="artesanato.html">Artesanato</a>
-                    </li>
-                    <li>
-                        <a class="grey-text text-lighten-3" href="contato.html">Contato</a>
-                    </li>
-                </ul>
+            <div class="footer-copyright">
+                <div class="container">© 2019 lucasrosab | Todos os direitos reservados</div>
             </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">© 2019 lucasrosab | Todos os direitos reservados</div>
-    </div>
-</footer>
+        </footer>
 
-<script type="text/javascript" src="js/libs/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/libs/materialize.min.js"></script>
-<script type="text/javascript" src="js/main.js"></script>
-</body>
+        <script type="text/javascript" src="js/libs/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/libs/materialize.min.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
 </html>
